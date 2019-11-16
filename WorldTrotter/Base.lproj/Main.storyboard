@@ -48,12 +48,14 @@
                                 <color key="textColor" red="0.88235294119999996" green="0.34509803919999998" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="70"/>
                                 <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no" keyboardType="decimalPad" smartDashesType="no" smartInsertDeleteType="no" smartQuotesType="no"/>
+                                <connections>
+                                    <action selector="FahrenheitFieldEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="20w-id-FHc"/>
+                                </connections>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" red="0.96078431372549022" green="0.95686274509803915" blue="0.94509803921568625" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="d0x-ee-e2d" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3nf-YN-WWr"/>
-                            <constraint firstItem="76N-pY-RQh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="5Qb-A8-vCm"/>
                             <constraint firstItem="d0x-ee-e2d" firstAttribute="top" secondItem="76N-pY-RQh" secondAttribute="bottom" constant="8" id="7WV-Hy-jcU"/>
                             <constraint firstItem="cOp-gz-c9P" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BzA-0Q-BVq"/>
                             <constraint firstItem="76N-pY-RQh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VMA-NQ-r4B"/>
@@ -66,10 +68,12 @@
                             <constraint firstItem="cOp-gz-c9P" firstAttribute="top" secondItem="EHx-vB-2wM" secondAttribute="bottom" constant="8" id="vWq-td-S1I"/>
                             <constraint firstItem="EHx-vB-2wM" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vbc-Px-oTq"/>
                             <constraint firstItem="76N-pY-RQh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="wP2-m9-sfC"/>
-                            <constraint firstItem="76N-pY-RQh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="8" id="yQ2-hM-jza"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="celsiusLabel" destination="EHx-vB-2wM" id="vJp-cm-eQk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
