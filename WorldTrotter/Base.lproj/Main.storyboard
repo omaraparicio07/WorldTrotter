@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Item-->
+        <!--Convert-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ConversionViewController" customModule="WorldTrotter" customModuleProvider="target" sceneMemberID="viewController">
@@ -71,7 +71,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="w5Z-Ba-8bC"/>
+                    <tabBarItem key="tabBarItem" title="Convert" image="ConvertIcon" selectedImage="ConvertIcon" id="w5Z-Ba-8bC"/>
                     <connections>
                         <outlet property="celsiusLabel" destination="EHx-vB-2wM" id="vJp-cm-eQk"/>
                         <outlet property="textField" destination="EHx-vB-2wM" id="rgH-zX-3oB"/>
@@ -84,9 +84,9 @@
                     </connections>
                 </tapGestureRecognizer>
             </objects>
-            <point key="canvasLocation" x="2475" y="319"/>
+            <point key="canvasLocation" x="2525" y="288"/>
         </scene>
-        <!--Item-->
+        <!--Map-->
         <scene sceneID="dKS-so-go6">
             <objects>
                 <viewController id="b73-w3-Kb4" sceneMemberID="viewController">
@@ -94,7 +94,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     </mapView>
-                    <tabBarItem key="tabBarItem" title="Item" id="d8Z-hW-M9a"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="MapIcon" selectedImage="MapIcon" id="d8Z-hW-M9a"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="UwH-lJ-vEM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -119,4 +119,8 @@
             <point key="canvasLocation" x="928" y="96"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="ConvertIcon" width="48.5" height="32.5"/>
+        <image name="MapIcon" width="48.5" height="32.5"/>
+    </resources>
 </document>
